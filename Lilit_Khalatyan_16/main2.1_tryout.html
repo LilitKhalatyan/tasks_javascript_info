@@ -1,0 +1,40 @@
+<!-- ------ 2.1 Working file -->
+
+<!DOCTYPE html>
+<!-- <head>
+  <html>
+    <body>
+      <div>Users:</div>
+      <input value="Click me" onclick="alert('Click!')" type="button" />
+      <input value="Click again" onclick="alert('Good Job')" type="button" />
+
+      <script>
+        function countClicks() {
+          for (let i = 1; i <= 3; i++) {
+            alert("Click " + i);
+          }
+        }
+      </script>
+
+      <input
+        type="button"
+        onclick="countClicks()"
+        value="Count clicks till 3"
+      />
+    </body>
+  </html>
+</head> -->
+
+<head>
+  <html>
+    <body>
+      <input id="elem" type="button" value="Click me" />
+      <script>
+        elem.onclick = function () {
+          alert("Thank you");
+        };
+      </script>
+      <button onclick="alert(this.innerHTML)">Click111 me</button>
+    </body>
+  </html>
+</head>

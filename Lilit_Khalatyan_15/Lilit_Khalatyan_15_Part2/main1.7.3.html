@@ -1,0 +1,24 @@
+<!-- ------ 1.7 Task 3/10 -->
+
+<!-- In the example below, the call table.remove() removes the table from the document.
+
+But if you run it, you can see that the text "aaa" is still visible.
+
+Why does that happen? -->
+<html>
+  <body>
+    <table id="table">
+      aaa
+      <tr>
+        <td>Test</td>
+      </tr>
+    </table>
+
+    <script>
+      console.log(table); // [object HTMLTableElement]
+
+      table.remove(); // aaa still there
+    </script>
+  </body>
+</html>
+<!-- // because of <table>, in ordered list case it worked  -->

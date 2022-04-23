@@ -1,0 +1,46 @@
+<!-- ------ 1.7 Task 8/10 -->
+
+<!-- Colored clock with setInterval -->
+<!-- Create a colored clock like here: -->
+<!-- Use HTML/CSS for the styling, JavaScript only updates time in elements. -->
+
+<html>
+  <body>
+    <!-- <p>My mother has <span style="color:blue">blue</span> eyes.</p> -->
+    <div id="clock">
+      <span style="color: red" class="hour">hh</span>:
+      <span style="color: green" class="min">mm</span>:
+      <span style="color: blue" class="sec">ss</span>
+    </div>
+
+    <input type="button" onclick="clockStart()" value="Start" />
+    <input type="button" onclick="clockStop()" value="Stop" />
+
+    <script>
+      function clockStart() {
+        location.reload();
+      }
+      let intervalId = setInterval(function () {
+        let date = new Date();
+
+        let hours = date.getHours();
+        if (hours < 10) hours = "0" + hours;
+
+        let mins = date.getMinutes();
+        if (mins < 10) mins = "0" + mins;
+
+        let secs = date.getSeconds();
+        if (secs < 10) secs = "0" + secs;
+
+        let spans = clock.getElementsByTagName("span");
+
+        spans[0].textContent = hours;
+        spans[1].textContent = mins;
+        spans[2].textContent = secs;
+      }, 10);
+      function clockStop() {
+        clearInterval(intervalId);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!-- <html>
+  <body>
+
+<div id="first">First</div>
+<div id="second">Second</div>
+<script>
+  // no need to call remove
+  second.after(first); // take #second and after it insert #first
+</script>
+<body>
+  </html> -->
+
+
+
+<html>
+  <body>
+    <style>
+      .alert {
+        padding: 15px;
+        border: 1px solid #d6e9c6;
+        border-radius: 4px;
+        color: #3c763d;
+        background-color: #dff0d8;
+      }
+    </style>
+
+    <!-- // Document Write [ -->
+    <p>Somewhere in the page...</p>
+    <script>
+      // document.write('<b>Hello from JS</b>');
+      setTimeout(() => document.write('<b>...By this.</b>'), 2000);
+    </script>
+    <p>The end</p>
+      <!-- // Document Write ] -->
+
+
+
+
+    <!-- // Cloning Node [ -->
+    <!-- <div class="alert" id="div">
+      <strong>Hi there!</strong> You've read an important message.
+    </div>
+
+    <script>
+      let div2 = div.cloneNode(true); // clone the message
+      div2.querySelector('strong').innerHTML = 'Bye there!'; // change the clone
+
+      div.after(div2); // show the clone after the existing div
+    </script> -->
+      <!-- // Cloning Node ] -->
+
+    <!-- // Node Removal - [
+    <script>
+      let div = document.createElement("div");
+      div.className = "alert";
+      div.innerHTML =
+        "<strong>Hi there!</strong> You've read an important message.";
+
+      document.body.append(div);
+      setTimeout(() => div.remove(), 5000);
+    </script>
+    // Node Removal ] -->
+  <body>
+</html>
+
+
+
+  <!-- <style>
+  .alert {
+    padding: 15px;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+    color: #3c763d;
+    background-color: #dff0d8;
+  }
+</style>
+
+
+
+<div class="alert">
+  <strong>Hi there!</strong> You've read an important message. -->
+        <!-- document.body.insertAdjacentHTML("afterbegin", `<div class="alert">
+    <strong>Hi there!</strong> You've read an important message.
+  </div>`);
+</div>
+
+<ol id="ol">
+  <li>0</li>
+  <li>1</li>
+  <li>2</li>
+</ol>
+
+<div id="div"></div>
+<script>
+  div.insertAdjacentHTML('beforebegin', '<p>Hello</p>');
+  div.insertAdjacentHTML('afterend', '<p>Bye</p>');
+</script> -->
+
+        <!-- <div id="div"></div>
+<script>
+  div.before("<p>Hi there!</p>", document.createElement("hr"));
+</script> -->
+
+        <!-- <script>
+  ol.before("before"); // insert string "before" before <ol>
+  ol.after("after"); // insert string "after" after <ol>
+
+  let liFirst = document.createElement("li");
+  liFirst.innerHTML = "prepend";
+  ol.prepend(liFirst); // insert liFirst at the beginning of <ol>
+
+  let liLast = document.createElement("li");
+  liLast.innerHTML = "append";
+  ol.append(liLast); // insert liLast at the end of <ol>
+  
+</script> -->
+      </html>
+    </body>
+  </body>
+</html>

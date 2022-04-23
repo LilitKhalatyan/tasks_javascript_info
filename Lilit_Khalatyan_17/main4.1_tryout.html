@@ -1,0 +1,21 @@
+<!-- ------ 4.1 Working file -->
+
+<head>
+  <html>
+    <body>
+      <form name="my">
+        <p><input name="one" value="1" /></p>
+        <p><input name="two" value="2" /></p>
+        <p><input type="radio" name="age" value="10" /></p>
+        <p><input type="radio" name="age" value="20" /></p>
+      </form>
+      <script>
+        let form = document.forms.my; // <form name="my"> element
+
+        let elem = form.elements.one; // <input name="one"> element
+
+        console.log(elem);
+      </script>
+    </body>
+  </html>
+</head>

@@ -1,0 +1,21 @@
+<!-- ------ 2.1 Task 1/7 -->
+<!-- Add JavaScript to the button to make <div id="text"> disappear when we click it. -->
+
+<!DOCTYPE html>
+
+<head>
+  <html>
+    <body>
+      <input id="elem" type="button" value="Click to hide the text" />
+
+      <div id="text">Text to be hide</div>
+
+      <script>
+
+        document.getElementById('elem').onclick = function() {
+          document.getElementById('text').hidden = true;
+        }
+      </script>
+    </body>
+  </html>
+</head>

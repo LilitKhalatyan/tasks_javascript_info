@@ -1,0 +1,22 @@
+<!-- ------ 1.8 Task 1/1 -->
+
+<!-- Write a function showNotification(options) 
+  that creates a notification: <div class="notification"> with the given content. 
+  The notification should automatically disappear after 1.5 seconds. -->
+
+<html>
+    <body>
+      <script>
+        // doesn't work!
+        document.body.style.margin = 20;
+        alert(document.body.style.margin); // '' (empty string, the assignment is ignored)
+    
+        // now add the CSS unit (px) - and it works
+        document.body.style.margin = '20px';
+        alert(document.body.style.margin); // 20px
+    
+        alert(document.body.style.marginTop); // 20px
+        alert(document.body.style.marginLeft); // 20px
+      </script>
+  </body>
+</html>

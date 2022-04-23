@@ -1,0 +1,29 @@
+<!-- ------ 1.7 Task 1/10 -->
+
+<!-- We have an empty DOM element elem and a string text.
+
+Which of these 3 commands will do exactly the same?
+
+elem.append(document.createTextNode(text))
+elem.innerHTML = text
+elem.textContent = text -->
+<html>
+  <body>
+    <div id="elem1"></div>
+    <div id="elem2"></div>
+    <div id="elem3"></div>
+    <div id="elem4"></div>
+    <div id="elem5"></div>
+    <div id="elem6"></div>
+    <script>
+      let text = "<b>text</b>";
+
+      elem1.append(document.createTextNode(text));
+      elem2.innerHTML = text; // this is exception, others are doing same thing
+      elem3.textContent = text;
+      elem4.prepend(document.createTextNode(text));
+      elem5.before(document.createTextNode(text));
+      elem6.after(document.createTextNode(text));
+    </script>
+  </body>
+</html>

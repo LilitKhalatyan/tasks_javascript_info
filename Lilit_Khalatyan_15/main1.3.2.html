@@ -1,0 +1,25 @@
+<!-- ------ 1.3 Task 2/3 -->
+
+<!-- Qwestion 1: Is it true that elem.lastChild.nextSibling is always null? -->
+<!-- Answer: if the child is the last one, it cannot have a next sibling, so it os null -->
+
+<!-- Qwestion 2: Is it true that elem.children[0].previousSibling is always null ? -->
+<!-- Answer: children, first or last, or any other is a child of element. So, if there are other elements, then 
+elem.children[0].previousSibling can be different than null  -->
+<!-- In the example below: document.body.children[1].previousSibling returned #text -->
+
+<html>
+  <body>
+    <div>Begin</div>
+    <ul>
+      <li>Information</li>
+    </ul>
+    <div>End</div>
+    <script>
+      console.log(document.body.children[0]); //<div>Begin</div>
+      console.log(document.body.children[1]); //<ul>..<ul>
+      console.log(document.body.children[1].previousSibling); // #text
+    </script>
+    ...
+  </body>
+</html>

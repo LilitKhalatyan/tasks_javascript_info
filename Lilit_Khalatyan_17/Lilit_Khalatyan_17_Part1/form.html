@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Personal Data Form</title>
+    <link rel="stylesheet" href="form.css">
+      </style>
+  </head>
+  <body>
+    <form action='results.html' method='GET' enctype='multipart/form-data'>
+      <div>
+        <label for='firstName'>First Name</label>
+        <input type='text' name='firstName' id='firstName' required placeholder='Your First Name'/>
+      </div>
+
+      <div>
+        <label for='lastName'>Last Name</label>
+        <input type='text' name='lastName' id='lastName' required placeholder='Your Last Name'/>
+      </div>
+
+      <div>
+        <label for='email'>E-mail</label>
+        <input type='email' name='email' id='email' />
+      </div>
+
+      <div>
+        <label for='age'>Age</label>
+        <input type='number' name='age' id='age' min='1' max='100' step='1'/>
+      </div>
+
+      <div>
+        <label for='region'>Your Region</label>
+        <select name='region' id='region' >
+          <option value='yerevan'>Yerevan</option>
+          <option value='aragatsotn'>Aragatsotn</option>
+          <option value='ararat'>Ararat</Aption>
+          <option value='armavir'>Armavir</Aption>
+          <option value='gegharkunik'>Gegharkunik</option>
+          <option value='kotayk'>Kotayk</option>
+          <option value='lori'>Lori</option>
+          <option value='shirak'>Shirak</option>
+          <option value='syunik'>Syunik</option>
+          <option value='tavush'>Tavush</option>
+          <option value='vayotsDzor'>Vayots Dzor</option>
+        </select>
+      </div>
+
+      <div>
+        Cities you would like/are able to move
+        <div>
+          <label for='yerevan'>Yerevan</label>
+          <input type='checkbox' name='yerevan' id='yerevan'/>
+        </div>
+        <div>
+          <label for='gyumree'>Gyumree</label>
+          <input type='checkbox' name='gyumree' id='gyumree'/>
+        </div>
+        <div>
+          <label for='vanadzor'>Vanadzor</label>
+          <input type='checkbox' name='vanadzor' id='vanadzor'/>
+        </div>
+        <div>
+          <label for='kapan'>Kapan</label>
+          <input type='checkbox' name='kapan' id='kapan'/>
+        </div>
+        <div>
+          <label for='sisian'>Sisian</label>
+          <input type='checkbox' name='sisian' id='sisian'/>
+        </div>
+        <div>
+          <label for='dilijan'>Dilijan</label>
+          <input type='checkbox' name='dilijan' id='dilijan'/>
+        </div>
+      </div>
+
+      <div>
+        <label for='date'>Starting from/Available Date</label>
+        <input type='datetime-local' name='date' id='date'/>
+      </div>
+
+      <div>
+        Gender
+        <div>
+          <label for='male'>Male</label>
+          <input type='radio' name='gender' id='male' value='male'/>
+        </div>
+        <div>
+          <label for='female'>Female</label>
+          <input type='radio' name='gender' id='female' value='female'/>
+        </div>
+      </div>
+
+      <div>
+        <label for='phone'>Phone Number</label>
+        <input id='phone' name='phone'></input>
+      </div>
+
+      <div>
+        <label for='about'>Anything else you would like to tell about you<div></div></label>
+        <textarea id='about' name='about'></textarea>
+      </div>
+
+      <div>
+        <label for="file">Attach your resume</label>
+        <input id="file" type="file" name="file">
+      </div>
+
+      <div>
+        <label for='git'>Your GitHub Account</label>
+        <input type='' name='git' id='git'/>
+      </div>
+
+      <div>
+        <label for='linkedin'>Your LinkedIn Account</label>
+        <input type='' name='linkedin' id='linkedin'/>
+      </div>
+
+      <div>
+        <label>
+          Password
+          <input type='password' name='Password' required/>
+      </label>
+      </div>
+      <div>
+        <button type='reset'>Reset</button>
+        <button type='submit'>Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
